@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Sun, Moon } from "@deemlol/next-icons";
+import { FiSun, FiMoon } from "react-icons/fi";
 import Head from 'next/head';
 import Terminal from '../components/Terminal';
 
@@ -186,7 +186,7 @@ export default function Home() {
       {/* NAV */}
       <nav className="nav">
         <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
-          {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          {theme === "dark" ? <FiSun size={20} /> : <FiMoon size={20} />}
         </button>
         <div className="nav-right">
           <div className="nav-links">
